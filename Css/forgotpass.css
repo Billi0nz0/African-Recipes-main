@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "montserrat", sans-serif;
 }
 
 body {
@@ -13,7 +12,7 @@ body {
   margin-top: 0;
   padding: 0;
   gap: 20px;
-  font-family: "montserrat", sans-serif;
+  font-family: "lato", sans-serif;
 }
 
 .main-header {
