@@ -434,7 +434,7 @@ footer {
   }
 
   .recipe-card {
-    max-height: 100%;
+    width: 95%;
   }
 
   .recipe-card-details {
@@ -546,6 +546,27 @@ footer {
   }
 }
 
+@media (max-width: 480px) {
+  .bannernotes {
+    font-size: 1.8rem;
+  }
+
+  .bannernotes2 {
+    font-size: 1rem;
+  }
+
+  .banner-img img {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .recipe-card-body {
+    grid-template-rows: 1fr 1fr;
+    row-gap: 5px;
+    padding: 5px;
+  }
+}
 
 
 

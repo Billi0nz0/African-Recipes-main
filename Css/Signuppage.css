@@ -211,3 +211,56 @@ footer a:hover {
   }
 }
 
+@media (max-width: 480px) {
+
+  .logo{
+    width: 100px;
+    height: auto;
+  }
+
+  .bottom-icon img {
+    width: 50px;
+    height: auto;
+  }
+
+  .right-box {
+    height: auto;
+    padding: 15px;
+    gap: 20px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .sign-up {
+    width: 70%;
+    max-width: 300px;
+  }
+
+  .sign-up input {
+    padding: 10px 8px;
+    font-size: 0.9rem;
+  }
+
+  .sign-up button {
+    padding: 8px 8px;
+    font-size: 0.9rem;
+  }
+
+  form label, form p {
+    font-size: 1rem;
+  }
+
+  footer, footer a, footer p {
+    font-size: 1rem;
+    text-align: center;
+    gap: 10px;
+  }
+}
