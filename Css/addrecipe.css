@@ -5,13 +5,10 @@
 }
 
 body {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   background-color: #f9e4b7;
-  height: auto;
   margin-top: 0;
   font-family: "lato", sans-serif;
+  height: auto;
 }
 
 main {
@@ -20,6 +17,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    width: 100%;
 }
 
 .main-header {
@@ -74,7 +72,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .hero-gif {
@@ -114,12 +112,16 @@ a:hover {
 }
 
 .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     box-sizing: border-box;
     background: #fdfdfd;
     width: 80%;
     height: auto;
     border-radius: 10%;
     padding: 7%;
+    margin-bottom: 50px;
 }
 
 form {
@@ -255,130 +257,7 @@ form button:hover {
     color: #000;
 }
 
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
-  width: 100%;
-  height: auto;
-  background: #f7a41b;
-  padding: 50px;
-  margin-top: 3%;
-  border-radius: 50px 50px 0 0;
-  gap: 30px;
-}
-
-.section1 {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-} 
-
-.section2, .section3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-    
-.footer1 {
-  font-size: 2.5rem;
-  color: #af4c0f;
-  line-height: 1.2;
-  font-weight: 400;
-}
-
-.footer2 {
-  font-size: 1.2rem;
-  color: #af4c0f;
-  font-weight: 700;
-}
-
-.footer3 {
-  Font-size: 1.5rem;
-  color: #af4c0f;
-  font-weight: 700;
-}
-
-.a3 {
-  border: none;
-  font-size: 0.9rem;
-  font-weight: bold;
-  color: #ffffff;
-  text-decoration: none;
-  text-align: center;
-  transition: background-color 0.3s ease;
-}
-
-.footer4 {
-  font-size: 0.9rem;
-  color: #af4c0f;
-  font-weight: 500;
-}
-
-.subscribe {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.subscribe form {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.subscribe input {
-  width: 60%;
-  height: auto;
-  padding: 10px 10px;
-  border: none;
-  border-radius: 10px 0 0 10px;
-  outline: none;
-  font-size: 1rem;
-}
-
-.subscribe button {
-  padding: 8.5px 7px;
-  border: none;
-  background: #8d3304;
-  color: #ffffff;
-  font-size: 1rem;
-  border-radius: 0 10px 10px 0;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.section3 button:hover {
-  background: #ffd700;
-}
-
-.section4 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-  gap: 10px;
-}
-
-.footer5 {
-  font-size: 1.2rem;
-  color: #af4c0f;
-  font-weight: 500;
-}
-
-.footer6 {
-  font-size: 1rem;
-  color: #af4c0f;
-  font-weight: 400;
-}
-
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
   .nav-links {
     display: none;
@@ -484,44 +363,6 @@ footer {
     width: auto;
     font-size: 0.9rem;
     font-family: "montserrat", sans-serif;
-  }
-
-   footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    flex-wrap: wrap;
-    margin-top: 2%;
-    gap: 20px;
-  }
-
-  .section1, .section2, .section3 {
-    width: 100%;
-    text-align: center;
-  }
-
-  .footer1 {
-    font-size: 1.5rem;
-    font-weight: 500;
-  }
-
-  .footer3 {
-    font-size: 0.9rem;
-  } 
-
-  .a3 {
-    font-size: 0.8rem;
-  }
-
-  .footer4 {
-    font-size: 0.8rem;
-  }
-
-  .footer5, .footer6 {
-    font-size: 0.8rem;
-    text-align: center;
   }
 }
 
@@ -653,44 +494,6 @@ footer {
     width: auto;
     font-size: 0.9rem;
     font-family: "montserrat", sans-serif;
-  }
-
-  footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    flex-wrap: wrap;
-    margin-top: 2%;
-    gap: 20px;
-  }
-
-  .section1, .section2, .section3 {
-    width: 100%;
-    text-align: center;
-  }
-
-  .footer1 {
-    font-size: 1.5rem;
-    font-weight: 500;
-  }
-
-  .footer3 {
-    font-size: 0.9rem;
-  } 
-
-  .a3 {
-    font-size: 0.8rem;
-  }
-
-  .footer4 {
-    font-size: 0.8rem;
-  }
-
-  .footer5, .footer6 {
-    font-size: 0.8rem;
-    text-align: center;
   }
 
 }

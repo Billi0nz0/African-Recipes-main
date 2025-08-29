@@ -1,0 +1,204 @@
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    font-family: 'lato', sans-serif;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        background: #f7a41b;
+        padding: 50px;
+        border-radius: 50px 50px 0 0;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    } 
+
+    .section2, .section3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+        
+    .footer1 {
+        font-size: 2.5rem;
+        color: #af4c0f;
+        line-height: 1.2;
+        font-weight: 400;
+    }
+
+    .footer2 {
+        font-size: 1.2rem;
+        color: #af4c0f;
+        font-weight: 700;
+    }
+
+    .footer3 {
+    Font-size: 1.5rem;
+    color: #af4c0f;
+    font-weight: 700;
+    }
+
+    .a3 {
+        border: none;
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: #ffffff;
+        text-decoration: none;
+        text-align: center;
+        transition: background-color 0.3s ease;
+    }
+
+    .footer4 {
+        font-size: 0.9rem;
+        color: #af4c0f;
+        font-weight: 500;
+    }
+
+    .section3 form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section3 form input {
+        padding: 10px;
+        width: 100%;
+        max-width: 250px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .section3 form button {
+        padding: 10px 15px;
+        border: none;
+        background-color: #af4c0f;
+        color: white;
+    }
+
+    .section4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer5 {
+        font-size: 1.2rem;
+        color: #af4c0f;
+        font-weight: 500;
+    }
+
+    .footer6 {
+        font-size: 1rem;
+        color: #af4c0f;
+        font-weight: 400;
+    }
+
+    @media (max-width: 768px) {
+        footer {
+            flex-direction: column;
+            padding: 30px;
+            gap: 20px;
+        }
+
+        .section1, .section2, .section3, .section4 {
+            align-items: center;
+            text-align: center;
+        }
+        .section3 form {
+            flex-direction: column;
+        }
+
+        .section3 input {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            gap: 20px;
+        }
+
+        .footer1 {
+            font-size: 1.8rem;
+        }
+
+        .section3 form {
+            flex-direction: column;
+        }
+
+        .subscribe {
+            flex-direction: row;
+        }
+
+        .section3 input {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .section3 form button {
+            width: 50%;
+            border-radius: 10px;
+        }
+    }
+</style>
+
+
+<footer id="footer">
+        <div class="section1">
+            <p class="footer1"> 
+                Explore Africa, </br>
+                One Taste Bud </br>
+                at a Time. 
+            </p> 
+        </div>
+
+        <div class="section2">
+             <p class="footer3"> Company </p>
+             <a class="a3" href="aboutus.html"  target="self"> About Us </a>
+             <a class="a3" href="contactus.html"  target="self"> Contact Us </a>
+             <a class="a3" href="https://docs.google.com/document/d/1-et3BkidrN1IFwqbuwbq15zFc7SotbiqUbLqcNxDS6s/edit?usp=sharing"  target="self">Terms and Conditions</a>
+            <a class="a3" href="https://docs.google.com/document/d/1uBP7E_n44H7aMnsK84cbf4pXkep8dDLQ/edit?usp=sharing&ouid=110801010579279232343&rtpof=true&sd=true"  target="self"> Privacy Policy </a>
+        </div>
+        
+        <div class="section3">
+            <p class="footer4">
+                Be The First to Know When a New <b>Recipe</b> is Added.
+            </p>
+            <form class="subscribe">
+                <input type="email" id="email" autocomplete="off" placeholder="Email" required />
+                <button type="submit"> 
+                    <i class="fas fa-paper-plane"></i> 
+                </button>
+            </form>
+        </div>
+        </div>
+        <div class="section4">
+        <p class="footer5"> © 2025 African Recipes. All rights reserved. </p>
+        <p class="footer6"> Made with ❤️ from African Recipes </p>
+        </div>
+  </footer>

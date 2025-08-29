@@ -175,6 +175,11 @@ footer a:hover {
 
 
 @media (max-width: 1040px) {
+  .logo img {
+    width: 100px;
+    height: auto;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
