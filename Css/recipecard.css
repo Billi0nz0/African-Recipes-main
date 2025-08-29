@@ -60,7 +60,7 @@
     border: none;
     width: 100%;
     height: 350px;
-    padding: 3%;
+    padding-left: 3%;
     background-color: #8d3304;
   }
 
@@ -103,13 +103,14 @@
   }
 
   .banner-img {
-    position: relative;
-    left: 3.31%;
+    display: flex;
+   
+    justify-content: flex-end;
   }
 
   .banner-img img {
     height: 300px;
-    width: 450px;
+    width: auto;
   }
 
   .recipe-card-details {
@@ -257,132 +258,6 @@
     margin-left: 3%;
 }
 
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    width: 100%;
-    height: auto;
-    background: #f7a41b;
-    padding: 50px;
-    margin-top: 3%;
-    border-radius: 50px 50px 0 0;
-    gap: 10%;
-  }
-
-  .section1 {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  } 
-
-  .section2, .section3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-    
-  .footer1 {
-    font-size: 2.5rem;
-    color: #af4c0f;
-    line-height: 1.2;
-    font-weight: 400;
-  }
-
-  .footer2 {
-    font-size: 1.2rem;
-    color: #af4c0f;
-    font-weight: 700;
-  }
-
-  i { 
-    font-size: 18px;
-    margin-left: 5px;
-    color: #ffffff;
-    text-decoration: none;
-  }
-
-  i, .a3:hover {
-    color: #ffd700;
-    transform: scale(1.2);
-    transition: 0.3s ease;
-  }
-
-  .footer3 {
-    Font-size: 1.5rem;
-    color: #af4c0f;
-    font-weight: 700;
-  }
-
-  .a3 {
-    border: none;
-    font-size: 0.9rem;
-    font-weight: bold;
-    color: #ffffff;
-    text-decoration: none;
-    text-align: center;
-    transition: background-color 0.3s ease;
-  }
-
-  .footer4 {
-    font-size: 0.9rem;
-    color: #af4c0f;
-    font-weight: 500;
-  }
-
-  .form {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .section3 input {
-    width: 60%;
-    height: auto;
-    padding: 10px 10px;
-    border: none;
-    border-radius: 10px 0 0 10px;
-    outline: none;
-    font-size: 1rem;
-  }
-
-  .section3 button {
-    padding: 8.5px 5px;
-    border: none;
-    background: #8d3304;
-    color: #ffffff;
-    font-size: 1rem;
-    border-radius: 0 10px 10px 0;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-
-  .section3 button:hover {
-    background: #ffd700;
-}
-
-  .section4 {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .footer5 {
-    font-size: 1.2rem;
-    color: #af4c0f;
-    font-weight: 500;
-  }
-
-  .footer6 {
-    font-size: 1rem;
-    color: #af4c0f;
-    font-weight: 400;
-  }
 
 @media (max-width: 768px) {
   header {
@@ -555,10 +430,35 @@ footer {
     font-size: 1rem;
   }
 
+  
+
+  .ads {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+  }
+
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .banner-img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    margin-left: 20%;
+  }
+
   .banner-img img {
     width: 100%;
     height: auto;
-    margin-left: 0;
   }
 
   .recipe-card-body {
